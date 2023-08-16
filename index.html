@@ -24,7 +24,8 @@
   }
 
 html, body {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 html {
@@ -33,6 +34,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 body {
@@ -58,12 +60,10 @@ font-size: 2rem;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .links-container {
@@ -138,6 +138,7 @@ font-size: 2rem;
       </div> -->
       <div>
         <a href="https://store.steampowered.com/app/1739300/?utm_source=links.smackstudio.com&utm_medium=button&utm_campaign=links" class="btn blue">Steam</a>
+        <a href="https://discord.gg/e6p5vH24dC?utm_source=links.smackstudio.com&utm_medium=button&utm_campaign=links" class="btn gray">Discord</a>
         <a href="https://tiktok.com/@SmackStudio/?utm_source=links.smackstudio.com&utm_medium=button&utm_campaign=links" class="btn gray">TikTok</a>
         <a href="https://twitter.com/SmackStudio/?utm_source=links.smackstudio.com&utm_medium=button&utm_campaign=links" class="btn gray">Twitter</a>
         <a href="https://youtube.com/SmackStudioGame/?utm_source=links.smackstudio.com&utm_medium=button&utm_campaign=links" class="btn gray">YouTube</a>        
@@ -149,9 +150,6 @@ font-size: 2rem;
       </div>
 
     </div>
-    <script>
-      feather.replace()
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="buttons.js"></script>
   </body>  
