@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" href="w3-theme.css">   
+<meta name="viewport" content="width=device-width, initial-scale=1" />  
+<link rel="stylesheet" href="buttons.css"> 
 <link rel="icon" href="favicon.png"> 
 <meta name="darkreader-lock">
 <title>Smack Studio</title>
@@ -41,7 +40,12 @@ h1, h2, h3, h4 {
 }
 
 .larger-text {
-    font-size: 3em;
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.btn {
+font-size: 2rem;
 }
 
 .container {
@@ -70,10 +74,6 @@ h1, h2, h3, h4 {
     margin-bottom: 0.5em;
 }
 
-.w3-theme:hover {
-  background-color: #ff245f !important;
-}
-
 .margin-top-2 {
   margin-top: 32px;
 }
@@ -83,6 +83,7 @@ h1, h2, h3, h4 {
   text-align: center;
   width: auto;
   font-weight: bolder;
+  margin-top: 1em;
 }
 
 .bottom span {
@@ -117,7 +118,7 @@ h1, h2, h3, h4 {
 
       <!-- Links section 1. Replace the # inside of the "" with your links. -->
       <h4 class="larger-text" style="text-align: center;">@SmackStudio</h4>
-      <div class="links-container large-text">
+      <!-- <div class="links-container large-text">
         <a href="https://store.steampowered.com/app/1739300/" class="w3-button w3-theme w3-border link">Steam</a>
         <br>
         <a href="https://tiktok.com/@SmackStudio" class="w3-button w3-theme w3-border link" target="_blank">TikTok</a>
@@ -125,11 +126,16 @@ h1, h2, h3, h4 {
         <a href="https://twitter.com/SmackStudio" class="w3-button w3-theme w3-border link" target="_blank">Twitter</a>
         <br>
         <a href="https://youtube.com/SmackStudioGame" class="w3-button w3-theme w3-border link" target="_blank">YouTube</a>
+      </div> -->
+      <div>
+        <a href="https://store.steampowered.com/app/1739300/" class="btn blue">Steam</a>
+        <a href="https://tiktok.com/@SmackStudio" class="btn gray">TikTok</a>
+        <a href="https://twitter.com/SmackStudio" class="btn gray">Twitter</a>
+        <a href="https://youtube.com/SmackStudioGame" class="btn gray">YouTube</a>        
       </div>
 
-
       <!-- Bottom section 3 -->
-      <div class="bottom margin-top-2 w3-padding w3-round">
+      <div class="bottom">
         <span style="vertical-align: 7px;">ThirdPixel Interactive</span>
       </div>
 
@@ -137,5 +143,7 @@ h1, h2, h3, h4 {
     <script>
       feather.replace()
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="buttons.js"></script>
   </body>  
 </html>
