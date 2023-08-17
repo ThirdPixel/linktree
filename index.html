@@ -101,10 +101,9 @@ font-size: 2rem;
   color: #000;
 }
 
-/* .bottom svg {
-  stroke: #ffffff;
-  fill: #ffffff;
-} */
+.logo img {
+  width: 250px;
+}
 
 @media (min-width: 768px) {
   .link {
@@ -125,10 +124,14 @@ font-size: 2rem;
     margin-bottom: 0.2em;
   }
 
+  .logo img {
+    width: 200px;
+  }
+
   .btn {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
-    padding: 20px 30; /* Adjust padding as needed */
+    padding: 18px 18px; /* Adjust padding as needed */
   }
 
   .bottom {
@@ -146,21 +149,12 @@ font-size: 2rem;
     <div class="container">
 
       <!-- Image and name container. Change to your pictue here. -->
-      <div style="text-align: center">
-        <a href="https://smackstudio.com/?utm_source=links.smackstudio.com&utm_medium=logo&utm_campaign=links"><img src="logo.png" class="w3-margin" alt="image" width="250px"></a>
+      <div class="logo" style="text-align: center">
+        <a href="https://smackstudio.com/?utm_source=links.smackstudio.com&utm_medium=logo&utm_campaign=links"><img src="logo.png" class="w3-margin" alt="logo"></a>
       </div>
 
-      <!-- Links section 1. Replace the # inside of the "" with your links. -->
+      <!-- Links section -->
       <h4 class="larger-text" style="text-align: center;">@SmackStudio</h4>
-      <!-- <div class="links-container large-text">
-        <a href="https://store.steampowered.com/app/1739300/" class="w3-button w3-theme w3-border link">Steam</a>
-        <br>
-        <a href="https://tiktok.com/@SmackStudio" class="w3-button w3-theme w3-border link" target="_blank">TikTok</a>
-        <br>
-        <a href="https://twitter.com/SmackStudio" class="w3-button w3-theme w3-border link" target="_blank">Twitter</a>
-        <br>
-        <a href="https://youtube.com/SmackStudioGame" class="w3-button w3-theme w3-border link" target="_blank">YouTube</a>
-      </div> -->
       <div>
         <a href="https://store.steampowered.com/app/1739300/?utm_source=links.smackstudio.com&utm_medium=button&utm_campaign=links" class="btn blue">Steam</a>
         <a href="https://discord.gg/e6p5vH24dC?utm_source=links.smackstudio.com&utm_medium=button&utm_campaign=links" class="btn gray">Discord</a>
@@ -171,6 +165,7 @@ font-size: 2rem;
 
       <!-- Bottom section 3 -->
       <div class="bottom">
+        <img src="granite.gif" width="100px"> <br>
         <span style="vertical-align: 7px;">ThirdPixel Interactive</span>
       </div>
 
